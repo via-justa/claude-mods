@@ -6,7 +6,7 @@ Mods for Claude Code: changes to its interface and behavior, each in its own fol
 
 | Mod | What it does |
 |---|---|
-| [`usage-band`](plugins/usage-band) | Adds one row above the prompt with three horizontal bars: the context window, coloured by category as `/context` colours it, the 5-hour limit and the weekly limit. Each limit shows when it resets. Hover over the row to see the tokens of each category. |
+| [`usage-band`](plugins/usage-band) | Adds one row above the prompt with three horizontal bars: the context window, colored by category as the context sidebar colors it, the 5-hour limit and the weekly limit. Each limit shows when it resets. |
 
 ## Install
 

@@ -54,8 +54,10 @@ test('the band draws the context and both limits, on every surface', async ($, o
     expect((await ui.find({ type: 'Text', text: /2h 30m/ }))?.text).toBe('↻ 2h 30m')
     expect((await ui.find({ type: 'Text', text: /^71%$/ }))?.text).toBe('71%')
     expect((await ui.find({ type: 'Text', text: /2d 0h/ }))?.text).toBe('↻ 2d 0h')
-    expect(await ui.find({ type: 'Text', text: /Messages/ })).toBeDefined()
-    expect(await ui.find({ type: 'Text', text: /Free space/ })).toBeUndefined()
+    if (surface === 'desktop') {
+      const svg = await ui.find({ type: 'Svg' })
+      expect(svg).toBeDefined()
+    }
     await ui.unmount()
   }
 })
