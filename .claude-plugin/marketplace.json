@@ -1,0 +1,16 @@
+{
+  "name": "claude-mods",
+  "owner": {
+    "name": "via-justa"
+  },
+  "metadata": {
+    "description": "Mods for Claude Code's interface and behavior"
+  },
+  "plugins": [
+    {
+      "name": "usage-band",
+      "source": "./plugins/usage-band",
+      "description": "One row above the prompt: the context window by category, the 5-hour limit and the weekly limit, as horizontal bars"
+    }
+  ]
+}
